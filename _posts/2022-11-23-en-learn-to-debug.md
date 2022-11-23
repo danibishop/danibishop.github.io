@@ -37,6 +37,6 @@ TBD
 
 Here you have John Carmack talking about IDEs and tools.
 
-https://www.youtube.com/watch?v=tzr7hRXcwkw
+{% include youtubePlayer.html id=tzr7hRXcwkw %}
 
 > He's the creator of Doom, Quake, Wolfenstein 3D, and many other games. He's also a very good programmer. He's talking about how he uses the debugger to understand the code he's reading.
