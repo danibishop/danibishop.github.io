@@ -1,6 +1,6 @@
 ## (re-)Learn to debug
 
-> This post is also available in [Spanish](2022-11-23-en-learn-to-debug.html).
+> This post is also available in [Spanish](es-learn-to-debug.html).
 
 > tl;dr: Instead of reading code or inserting "temporary" code, learn to debug. It's a skill that will make your life easier once you start using it. You don't even need to "master" it, just learn the basics and you'll be fine.
 
