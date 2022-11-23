@@ -27,7 +27,7 @@ Then you will be a much happier person once you learn **how to use a debugger**.
 
 Debugging is not hard; using ugly or complicated tools is hard. There is a lot of discussion about "how unfriendly is `gdb`", but aside from these debates in the `C/C++` world, debugging most of the code out there is quite easy and straightforward nowadays most of the time.
 
-Debugging Python, Javascript, Typescript, Java, C#, etc., which represent
+Debugging Python, Javascript, Typescript, Java, C#, etc. (which represent around the 70% up to 90% of the code out there depending on the source you check) is nowadays fully supported by the IDEs and editors you use. You don't need to learn a new tool, you just need to learn how to use the one you already have.
 
 ## An example
 
@@ -37,6 +37,6 @@ TBD
 
 Here you have John Carmack talking about IDEs and tools.
 
-{% include youtubePlayer.html id=tzr7hRXcwkw %}
+{% include youtubePlayer.html id="tzr7hRXcwkw" %}
 
 > He's the creator of Doom, Quake, Wolfenstein 3D, and many other games. He's also a very good programmer. He's talking about how he uses the debugger to understand the code he's reading.
