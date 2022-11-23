@@ -1,5 +1,5 @@
-## (Re)Aprende a depurar
+## Aprende a depurar
 
-> Este post está disponible también en [Inglés](en-learn-to-debug.html).
+> Este post está disponible en [Inglés](en-learn-to-debug.html).
 
-> tl;dr: En lugar de sólo leer código o meter código "temporal" (guiño, guiño, codo, codo), aprende a **depurar**. Es una habilidad que va a hacer tu vida mucho más fácil en cuanto empieces. Ni siquiera necesitas tener toda la experiencia del mundo: con sólo aprender lo básico tienes suficiente.
+> tl;dr: En lugar de leer código o meter algún código "temporal", aprende a depurar. La depuración te permite ver los valores reales de las variables y cómo el código se ejecuta de una línea a otra. Hoy en día, la mayoría de los IDEs tienen soluciones integradas para la mayoría de los lenguajes habituales, por lo que ni siquiera necesitas ser un experto: con un poco de conocimiento básico podrás depurar tu código.

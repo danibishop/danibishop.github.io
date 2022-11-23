@@ -1,12 +1,12 @@
 ---
-layout: page
+layout: post
 tags: debugging basics tools
 ---
-## (re-)Learn to debug
+## Learn to debug
 
 > This post is also available in [Spanish](es-learn-to-debug.html).
 
-> tl;dr: Instead of reading code or inserting "temporary" code, learn to debug. It's a skill that will make your life easier once you start using it. You don't even need to "master" it, just learn the basics and you'll be fine.
+> tl;dr: Instead of reading code or inserting "temporary" code, learn to debug. Debugging allows you to see the actual values of variables and how the execution jumps from one line to another. Nowadays, most IDEs have built-in solutions for most common languages, so you don't even need to be an expert: with just a bit of basic knowledge you'll be able to debug your code.
 
 ### Do you see yourself in any of these situations?
 
@@ -16,16 +16,19 @@ tags: debugging basics tools
 
 * You have a bug in your code. You try to fix it, but you can't reproduce it. You try to add some logging to see what's going on, but you can't reproduce it. You try to add some "temporary" code to see what's going on, but you can't reproduce it. You decide to run to the hills and retire from software development forever.
 
-## If yes...
+## If your answer was "yes"...
 
 Then you will be a much happier person once you learn **how to use a debugger**.
 
 > Debuggers are tools that allow you to inspect the state of your program while it's running. They allow you to set breakpoints, which are points in your code where the program will stop and allow you to inspect the state of the program. You can then step through the code, line by line, and inspect the state of the program at each step. You can also inspect the state of variables, call functions, etc.
 
+* Debuggers are non-intrusive: they don't modify your code in any way. They just allow you to inspect the state of your program while it's running.
+* You can debug your tests. If some test suddendly fails, you can debug it to see what's going on (some people could argue that this smells like a bad test because it cannot be "easily understood", but that's a different topic).
+* TBD
 
 ## But debugging is hard!
 
-Debugging is not hard; using ugly or complicated tools is hard. There is a lot of discussion about "how unfriendly is `gdb`", but aside from these debates in the `C/C++` world, debugging most of the code out there is quite easy and straightforward nowadays most of the time.
+Debugging is not hard; **using ugly or complicated tools is hard**. There is a lot of discussion about "how unfriendly is `gdb`", but aside from these debates in the `C/C++` world, debugging most of the code out there is quite easy and straightforward nowadays most of the time.
 
 Debugging Python, Javascript, Typescript, Java, C#, etc. (which represent around the 70% up to 90% of the code out there depending on the source you check) is nowadays fully supported by the IDEs and editors you use. You don't need to learn a new tool, you just need to learn how to use the one you already have.
 
