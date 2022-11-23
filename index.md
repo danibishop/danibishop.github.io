@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dani Ramírez - Tech Lead & Team building
+title: Tech Lead - Team builder - Enabler
 ---
 
 # I help software teams to succeed
@@ -20,3 +20,7 @@ title: Dani Ramírez - Tech Lead & Team building
 * Leading is not about commanding and using the whip; **leading is about understanding** and sharing the goods and bads.
 * Leading is not about being x10 whatever; **leading is about helping others** reaching their goals.
 * Leading is not about living for your job; **leading is about finding balance**.
+
+## Contact me
+
+If you need **mentorship** for your personal development or **team building assesment** for your team, please contact me using the links below or this [summarized CV](https://trello.com/b/14rDUIh6/curriculum-dani-ramirez)
