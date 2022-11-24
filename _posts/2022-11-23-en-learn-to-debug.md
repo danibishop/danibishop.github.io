@@ -1,7 +1,7 @@
 ---
 layout: post
-tags: debugging English
-categories: basics road-to-senior
+tags: debugging
+categories: basics
 ---
 ## Learn to debug
 
