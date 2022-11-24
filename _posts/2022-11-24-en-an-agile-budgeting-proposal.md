@@ -66,7 +66,7 @@ This proposal is an equilibrium point between the customer's and the provider's 
 
 > The rule to calculate the compensation split for the available budget can be linear, quadratic, a LUT, ... whatever that fits the business model. For the examples, I will use a linear compensation for simplicity.
 
-## Savings/Compensation function $\sigma(t')$
+## Savings/Compensation function $$\sigma(t')$$
 
 * Project has a budget $$B$$
 * Project has a duration $$D_B$$
@@ -79,7 +79,7 @@ This proposal is an equilibrium point between the customer's and the provider's 
     * $$S_\$  = B_{L_t}·\sigma(t')$$ are the economic savings for the customer
     * $$C_\$ = B_{L_t}·(1-\sigma(t'))$$ is the economic compensation for the blocked time (opportunity cost)
     * Where $$\sigma(t')$$ is the split factor. $$\sigma(t')\in[0,1]$$
-    * $$B_{L_{t'}} = S_\$ + C_\$$$
+    * $$B_{L_{t'}} = S_\$ + C_\{$}$$
 * About the deadline:
     * $$S_{t'} = (1-t')$$ is the normalized saved time for both parties
         > *One extension of the model could imply translating this saved time into money for the provider, given some historical data about the team's productivity. This is not included in this proposal.*
@@ -93,7 +93,7 @@ For example, imagine we settle a project with these parameters:
 
 * Budget: $$B=400000$$
 * Duration: $$D_B=10$$months
-* $$\sigma(t') = \sigma_0 = 0.8$$
+* Let's give some room to the customer: $$\sigma(t') = \sigma_0 = 0.8$$
 
 Customer wants out at $$t'=0.5$$ (half of the project duration). Then:
 
@@ -146,7 +146,7 @@ In this case, as the customer has to spend the whole budget in any case, the pro
 
 As there is no trust, any attempt to deliver value early will be translated into artificial work that will not add value to the customer. This is a waste of time and money for everybody.
 
-* $$\sigma(t') = 0$$
+* $$\sigma(t') = 0$$, provider predates the budget excess
 * $$S_\$ = 0$$, no savings in the budget
 * $$C_\$ = B_{L_t} = B(1-t')$$, but this will eventually be $$C_\$ = 0 $$as $$t'=1 $$because of artificially extended delivery time.
 * $$S_{t'} = 0$$, no savings in time
@@ -155,9 +155,9 @@ As there is no trust, any attempt to deliver value early will be translated into
 
 In this model the provider is not compensated for the blocked time if the customer decides to retire early. 
 
-* $$\sigma(t') = 1$$
+* $$\sigma(t') = 1$$, consumer predates the budget excess
 * $$C_\$ = 0$$, no compensation for the opportunity cost
-* $$S_\$ = B_{L_t} = B(1-t')$$
+* $$S_\$ = B_{L_t} = B(1-t')$$, all savings in the budget
 * $$S_{t'} = 0$$, no savings in time
 
 In this scenario the customer has all power. They can retire at any time and save all the budget left. The provider will not be compensated for the blocked time, but they will be compensated for the work done.
