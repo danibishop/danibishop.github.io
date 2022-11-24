@@ -2,7 +2,6 @@
 layout: post
 tags: English
 categories: agile business lean
-use_math: true
 ---
 
 ## An agile budgeting proposal
