@@ -68,53 +68,54 @@ This proposal is an equilibrium point between the customer's and the provider's 
 
 ## Savings/Compensation function $\sigma(t')$
 
-* Project has a budget $B$
-* Project has a duration $D_B$
-* Elapsed time at a given moment is $t$. Normalized time is $t'=t/D_B$with $t'\in[0,1]$
-    * $t'=0$ means that the project has just started
-    * $t'=1$ means that the project has reached the deadline
-* Budget left at a given moment: $B_{L_t}=B-(B/D)·t=B(1-t/D) = B(1-t')$
+* Project has a budget $$ B $$
+* Project has a duration $$ D_B $$
+* Elapsed time at a given moment is $$ t $$.
+* Normalized time is $$ t'=t/D_B $$ with $$ t'\in[0,1] $$
+    * $$ t'=0 $$ means that the project has just started
+    * $$ t'=1 $$ means that the project has reached the deadline
+* Budget left at a given moment: $$ B_{L_t}=B-(B/D)·t=B(1-t/D) = B(1-t') $$
 * Budget left is split into two parts:
-    * $S_\$ = B_{L_t}·\sigma(t')$ are the economic savings for the customer
-    * $C_\$ = B_{L_t}·(1-\sigma(t'))$ is the economic compensation for the blocked time (opportunity cost)
-    * Where $\sigma(t')$ is the split factor. $\sigma(t')\in[0,1]$
-    * $B_{L_{t'}} = S_\$ + C_\$$
+    * $$ S_\$  = B_{L_t}·\sigma(t') $$ are the economic savings for the customer
+    * $$ C_\$ = B_{L_t}·(1-\sigma(t')) $$ is the economic compensation for the blocked time (opportunity cost)
+    * Where $$ \sigma(t') $$ is the split factor. $$ \sigma(t')\in[0,1] $$
+    * $$ B_{L_{t'}} = S_\$ + C_\$ $$
 * About the deadline:
-    * $S_{t'} = (1-t')$ is the normalized saved time for both parties
+    * $$ S_{t'} = (1-t') $$ is the normalized saved time for both parties
         > *One extension of the model could imply translating this saved time into money for the provider, given some historical data about the team's productivity. This is not included in this proposal.*
-* Provider income: $P_\$=(B*t'+C_\$)$
+* Provider income: $$ P_\$=(B*t'+C_\$) $$
 
 ## Constant model
 
-In this model we assume that $\sigma(t') = \sigma_0$, where $\sigma_0$ is a constant. This means that the customer will save the same percentage of the budget left at any point in time and this amount will be also the compensation for the blocked time.
+In this model we assume that $$ \sigma(t') = \sigma_0 $$, where $$ \sigma_0 $$ is a constant. This means that the customer will save the same percentage of the budget left at any point in time and this amount will be also the compensation for the blocked time.
 
 For example, imagine we settle a project with these parameters:
 
-* Budget: $B=400000$
-* Duration: $D_B=10$ months
-* $\sigma(t') = \sigma_0 = 0.8$
+* Budget: $$ B=400000 $$
+* Duration: $$ D_B=10 $$ months
+* $$ \sigma(t') = \sigma_0 = 0.8 $$
 
-Customer wants out at $t'=0.5$ (half of the project duration). Then:
+Customer wants out at $$ t'=0.5 $$ (half of the project duration). Then:
 
-* $B_{L_{t'}} = B·(1-t') = B·(1-0.5) = B·(0.5) = 200000$ has not been spent yet.
-* $S_\$ = B_{L_{t'}}·\sigma = 200000·0.8 = 160000$ are the economic savings for the customer
-* $C_\$ = B_{L_{t'}}·(1-\sigma) = 200000·0.2 = 40000$ is the economic compensation for the blocked time (opportunity cost)
-* $P_\$ = (B·t'+C_\$) = (400000·0.5+40000) = 240000$ is the provider income
-* $S_{t'} = (1-t') = (1-0.5) = 0.5$ is the normalized saved time for both parties, which corresponds with 5 months.
+* $$ B_{L_{t'}} = B·(1-t') = B·(1-0.5) = B·(0.5) = 200000 $$ has not been spent yet.
+* $$ S_\$ = B_{L_{t'}}·\sigma = 200000·0.8 = 160000 $$ are the economic savings for the customer
+* $$ C_\$ = B_{L_{t'}}·(1-\sigma) = 200000·0.2 = 40000 $$ is the economic compensation for the blocked time (opportunity cost)
+* $$ P_\$ = (B·t'+C_\$) = (400000·0.5+40000) = 240000 $$ is the provider income
+* $$ S_{t'} = (1-t') = (1-0.5) = 0.5 $$ is the normalized saved time for both parties, which corresponds with 5 months.
 
 > I find this model too simple and not very useful, as it always punishes one side, depending on context. It is just a starting point to explore the possibilities.
 
 ## Linear model
 
-In this model we assume that $\sigma(t') = \alpha t' + \beta$, and we define one or two optional deadzones for the kick-off and the end of the project.
+In this model we assume that $$ \sigma(t') = \alpha t' + \beta $$, and we define one or two optional deadzones for the kick-off and the end of the project.
 
 For example, we could define a project with these parameters:
 
-* $\beta = ...$ **TBD**
+* $$ \beta = ... $$ **TBD**
 
 ## Quadratic model
 
-In this model we assume that $\sigma(t') = \alpha t'^2 + \beta t' + \gamma$, and we define one or two optional deadzones for the kick-off and the end of the project.
+In this model we assume that $$ \sigma(t') = \alpha t'^2 + \beta t' + \gamma $$, and we define one or two optional deadzones for the kick-off and the end of the project.
 
 > **TBD**. Not sure if anything interesting can be done with this model in a practical scenario.
 
@@ -132,7 +133,7 @@ Because our work is to deliver value, not to pay lawyers to write smart contract
 
 First condition: the customer must trust the team. If the customer does not trust the team, then this proposal is not going to work.
 
-Also, define a $\sigma(t')$ that is easy to explain. Maybe a constant is good enough. Maybe some LUT definition is also a good thing.
+Also, define a $$ \sigma(t') $$ that is easy to explain. Maybe a constant is good enough. Maybe some LUT definition is also a good thing.
 
 ## Degenerate cases
 
@@ -145,19 +146,19 @@ In this case, as the customer has to spend the whole budget in any case, the pro
 
 As there is no trust, any attempt to deliver value early will be translated into artificial work that will not add value to the customer. This is a waste of time and money for everybody.
 
-* $\sigma(t') = 0$ 
-* $S_\$ = 0$, no savings in the budget
-* $C_\$ = B_{L_t} = B(1-t')$, but this will eventually be $C_\$ = 0$ as $t'=1$ because of artificially extended delivery time.
-* $S_{t'} = 0$, no savings in time
+* $$ \sigma(t') = 0 $$ 
+* $$ S_\$ = 0 $$, no savings in the budget
+* $$ C_\$ = B_{L_t} = B(1-t') $$, but this will eventually be $$ C_\$ = 0 $$ as $$ t'=1 $$ because of artificially extended delivery time.
+* $$ S_{t'} = 0 $$, no savings in time
 
 ### Consumer predatory model
 
 In this model the provider is not compensated for the blocked time if the customer decides to retire early. 
 
-* $\sigma(t') = 1$
-* $C_\$ = 0$, no compensation for the opportunity cost
-* $S_\$ = B_{L_t} = B(1-t')$
-* $S_{t'} = 0$, no savings in time
+* $$ \sigma(t') = 1 $$
+* $$ C_\$ = 0 $$, no compensation for the opportunity cost
+* $$ S_\$ = B_{L_t} = B(1-t') $$
+* $$ S_{t'} = 0 $$, no savings in time
 
 In this scenario the customer has all power. They can retire at any time and save all the budget left. The provider will not be compensated for the blocked time, but they will be compensated for the work done.
 
@@ -168,4 +169,4 @@ Anyhow, under this constraints there is no benefit on delivering early, so the p
 * [ ] Add references
 * [ ] Add plots
 * [ ] Spanish translation
-* [ ] Add LaTeX support
+* [x] Add LaTeX support
