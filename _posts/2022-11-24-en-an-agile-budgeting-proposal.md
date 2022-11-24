@@ -2,6 +2,7 @@
 layout: post
 tags: English
 categories: agile business lean
+use_math: true
 ---
 
 ## An agile budgeting proposal
@@ -166,3 +167,5 @@ Anyhow, under this constraints there is no benefit on delivering early, so the p
 * [ ] Add all examples
 * [ ] Add references
 * [ ] Add plots
+* [ ] Spanish translation
+* [ ] Add LaTeX support
