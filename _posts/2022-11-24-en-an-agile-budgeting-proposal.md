@@ -79,7 +79,7 @@ This proposal is an equilibrium point between the customer's and the provider's 
     * $$S_\$  = B_{L_t}·\sigma(t')$$ are the economic savings for the customer
     * $$C_\$ = B_{L_t}·(1-\sigma(t'))$$ is the economic compensation for the blocked time (opportunity cost)
     * Where $$\sigma(t')$$ is the split factor. $$\sigma(t')\in[0,1]$$
-    * $$B_{L_{t'}} = S_\$ + C_\{$}$$
+    * $$B_{L_{t'}} = S_\$ + C_\$ $$
 * About the deadline:
     * $$S_{t'} = (1-t')$$ is the normalized saved time for both parties
         > *One extension of the model could imply translating this saved time into money for the provider, given some historical data about the team's productivity. This is not included in this proposal.*
