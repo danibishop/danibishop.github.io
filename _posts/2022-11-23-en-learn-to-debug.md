@@ -1,10 +1,9 @@
 ---
 layout: post
-tags: debugging basics tools
+tags: debugging English
+categories: basics road-to-senior
 ---
 ## Learn to debug
-
-> This post is also available in [Spanish](es-learn-to-debug.html).
 
 > tl;dr: Instead of reading code or inserting "temporary" code, learn to debug. Debugging allows you to see the actual values of variables and how the execution jumps from one line to another. Nowadays, most IDEs have built-in solutions for most common languages, so you don't even need to be an expert: with just a bit of basic knowledge you'll be able to debug your code.
 

@@ -1,3 +1,9 @@
+---
+layout: post
+tags: debugging Spanish
+categories: basics road-to-senior
+---
+
 ## Aprende a depurar
 
 > Este post está disponible en [Inglés](en-learn-to-debug.html).
