@@ -44,27 +44,8 @@ I will explore here a potential solution to these problems. But first we need to
 
 This proposal is an equilibrium point between the customer's and the provider's interests. None of them will regret this agreement once the project starts in any reasonable scenario.
 
-## The proposal
-
-* Project can be negotiated as a regular waterfall project in terms of budget and deadline limitations, but these are just **boundary conditions**, not mandatory limits that must be reached.
-    * This helps the sales team to sell the project using their regular sales pitch with some variation.
-    * This helps the customer to understand the project in terms of their regular project management.
-
-* The development will follow an iterative process where the customer **must** be an active part, providing feedback about value provided.
-
-* All split conditions for the budget left are known and agreed upon by both parties. No surprises. No bargaining post-kickoff.
-
-* If the feedback is bad during the early stages of the development, customer can retire saving most of the budget left, but not all of it. The team will be compensated for the work done and the blocked time (opportunity cost).
-    * The earlier the customer retires, the more money they save but the less value they get.
-
-* If the feedback is good during the development, the development will reach some point where the customer will decide that there is no more value to be added before reaching the deadline and the project can be considered **done**.
-
-    * In this case, the customer can save part of the budget left, but not all of it. The team will be compensated for **early delivery** of the **highest possible value**.
-    * The customer gets top-value in less time for less money.
-    * The team gets higher compensation/effort ratio, plus more time to work on other projects (or to rest).
 
 
-> The rule to calculate the compensation split for the available budget can be linear, quadratic, a LUT, ... whatever that fits the business model. For the examples, I will use a linear compensation for simplicity.
 
 ## Savings Ratio Function $$SRF(t')$$
 
@@ -122,23 +103,42 @@ I find this model maybe too simple but it is a first approximation. It is easy t
 
 In the future I will explore different $$SRF(t')$$ functions, but for now I will use this constant model to illustrate the proposal.
 
-> Maybe some SRF that converts the provider income vs t' into a displaced sigmoid function could be interesting. Something to protect the customer from poor value deliveries in the first stages and to protect the provider from the customer's whims once the project is mature.
+> Maybe some SRF that converts the provider income vs t' into a displaced sigmoid function could be interesting. Something to protect the customer from poor value deliveries in the first stages and to protect the provider from the customer's whims once the project is mature. Maybe some "tunable" sigmoid like [these](https://dhemery.github.io/DHE-Modules/technical/sigmoid/#function) could be interesting.
 
-## Some questions
+## Final pitch
 
-### What happens if "project is about to reach deadline and customer is not satisfied with the value delivered"?
+* Project can be negotiated as a regular waterfall project in terms of budget and deadline limitations, but these are just **boundary conditions**, not mandatory limits that must be reached.
+    * This helps the sales team to sell the project using their regular sales pitch with some variation.
+    * This helps the customer to understand the project in terms of their regular project management.
+
+* The development will follow an iterative process where the customer **must** be an active part, providing feedback about value provided.
+
+* All split conditions for the budget left are known and agreed upon by both parties. No surprises. No bargaining post-kickoff.
+
+* If the feedback is bad during the early stages of the development, customer can retire saving most of the budget left, but not all of it. The team will be compensated for the work done and the blocked time (opportunity cost).
+    * The earlier the customer retires, the more money they save but the less value they get.
+
+* If the feedback is good during the development, the development will reach some point where the customer will decide that there is no more value to be added before reaching the deadline and the project can be considered **done**.
+
+    * In this case, the customer can save part of the budget left, but not all of it. The team will be compensated for **early delivery** of the **highest possible value**.
+    * The customer gets top-value in less time for less money.
+    * The team gets higher compensation/effort ratio, plus more time to work on other projects (or to rest).
+
+### Some questions
+
+#### What happens if "project is about to reach deadline and customer is not satisfied with the value delivered"?
 
 That scenario means that the agile process is not working in this project. Not meeting a deadline is something that can be predicted and avoided given the constraints I provided above.
 
 I am not saying that this is not a real problem, I just say that it does not apply to this proposal in its current form.
 
-### Why not predate the budget with a draconian contract?
+#### Why not predate the budget with a draconian contract?
 
 Because our work is to deliver value, not to pay lawyers to write smart contracts. If you prefer to predate the budget in case of early retirement, go ahead. But then you are not in the software business, you are in the legal business.
 
 This is a suboptimal solution as delivering value way before the deadline has more direct and potential income.
 
-## How the hell are you going to explain this to the customer?
+### How the hell are you going to explain this to the customer?
 
 First condition: the customer must trust the team. If the customer does not trust the team, then this proposal is not going to work.
 
@@ -159,11 +159,11 @@ As there is no trust, any attempt to deliver value early will be translated into
 * $$C_\$(t') = B_L(t') = B(1-t')$$, but this will eventually be zero as $$t'=1$$ because of artificially extended delivery time.
 * $$T_S(t') = 0$$, no savings in time
 
-### Consumer predatory model
+### Customer predatory model
 
 In this model the provider is not compensated for the blocked time if the customer decides to retire early. 
 
-* $$SRF(t') = 1$$, consumer predates the budget excess
+* $$SRF(t') = 1$$, customer predates the budget excess
 * $$C_\$(t') = 0$$, no compensation for the opportunity cost
 * $$S_\$(t') = B_L(t') = B(1-t')$$, all savings in the budget
 * $$T_S(t') = 0$$, no savings in time

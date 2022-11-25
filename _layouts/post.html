@@ -12,8 +12,10 @@ layout: default
       </time>
       {% assign author = page.author | default: site.author %}
       {%- if author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- endif -%}</p>
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+          itemprop="name">{{ author }}</span></span>
+      {%- endif -%}
+    </p>
   </header>
 
   <div class="share-links">
@@ -21,6 +23,7 @@ layout: default
   </div>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {% include reading-time.html %}
     {{ content }}
     {% include navlinks.html %}
   </div>
