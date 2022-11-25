@@ -39,6 +39,7 @@ I will explore here a potential solution to these problems. But first we need to
 * Provider tries to maximize the project ROI (=maximize income per time unit)
 * Provider has a queue of projects to work on and/or values the importance of free earned time
 * Customer and provider assume that the context when starting a project **will** change during the execution of it and nobody should be blamed for that, nor charged.
+* Budget release is proportional to the elapsed time. This might not reflect all situations, but it is generally a good approximation.
 
 ## Hypothesis
 
@@ -76,6 +77,7 @@ Also, other derived results:
     * This amount is never bigger than the budget.
     * If $$SRF(t') = 0$$, the customer has no savings and the provider gets the full budget. See the example below about the Predatory Provider.
     * If $$T_S(t') = 0$$, it means that all the available time has been used and the customer has no savings.
+    * **This is the function that condenses all the model**. It's shape defines the balance between the customer's and the provider's interests at any given moment.
     
 
 
