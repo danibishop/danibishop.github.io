@@ -57,15 +57,15 @@ Given that:
 * Normalized time is $$t'=t/D_B$$ with $$t'\in[0,1]$$
     * $$t'=0$$ means that the project has just started
     * $$t'=1$$ means that the project has reached the deadline
-* Budget left at a given moment is $$B_L(t')=B-(B/D)·t=B(1-t/D) = B(1-t')$$
+* Remaining budget at a given moment is $$B_R(t')=B-(B/D)·t=B(1-t/D) = B(1-t')$$
 
-Then, we can split the budget left in two parts:
+Then, we can split the remaining budget in two parts:
 
-* $$S_\$(t')  = B_L(t')·SRF(t')$$ are the economic savings for the customer
-* $$C_\$(t') = B_L(t')·(1-SRF(t'))$$ is the economic compensation for the blocked time (opportunity cost)
-* So, the budget left is the sum of both savings plus compensation: $$B_L(t') = S_\$ + C_\$ $$
+* $$S_\$(t')  = B_R(t')·SRF(t')$$ are the economic savings for the customer
+* $$C_\$(t') = B_R(t')·(1-SRF(t'))$$ is the economic compensation for the blocked time (opportunity cost)
+* So, the remaining budget is the sum of both savings plus compensation: $$B_R(t') = S_\$ + C_\$ $$
 * Where $$SRF(t')\in[0,1]$$ is the **split factor function**.
-    * It represents what percentage of the budget left is saved by the customer if they retire at a given moment $$t'$$.
+    * It represents what percentage of the remaining budget is saved by the customer if they retire at a given moment $$t'$$.
 
 
 Also, other derived results:
@@ -81,7 +81,7 @@ Also, other derived results:
 
 ## Constant model
 
-In this model we assume that $$SRF(t') = SRF_0$$, where $$SRF_0$$ is a constant. This means that the customer will save the same percentage of the budget left at any point in time and this amount will be also the compensation for the blocked time.
+In this model we assume that $$SRF(t') = SRF_0$$, where $$SRF_0$$ is a constant. This means that the customer will save the same percentage of the remaining budget at any point in time and this amount will be also the compensation for the blocked time.
 
 For example, imagine we settle a project with these parameters:
 
@@ -91,9 +91,9 @@ For example, imagine we settle a project with these parameters:
 
 Customer wants out at $$t'=0.5$$ (half of the project duration). Then:
 
-* $$B_L(0.5) = B·(1-0.5) = B·(0.5) = 200000$$ has not been spent yet.
-* $$S_\$(0.5) = B_L(0.5)·SRF = 200000·0.8 = 160000$$ are the economic savings for the customer
-* $$C_\$(0.5) = B_L(0.5)·(1-SRF) = 200000·0.2 = 40000$$ is the economic compensation for the blocked time (opportunity cost)
+* $$B_R(0.5) = B·(1-0.5) = B·(0.5) = 200000$$ has not been spent yet.
+* $$S_\$(0.5) = B_R(0.5)·SRF = 200000·0.8 = 160000$$ are the economic savings for the customer
+* $$C_\$(0.5) = B_R(0.5)·(1-SRF) = 200000·0.2 = 40000$$ is the economic compensation for the blocked time (opportunity cost)
 * $$P_\$(0.5) = (B·t'+C_\$(0.5)) = (400000·0.5+40000) = 240000$$ is the provider income
 * $$T_S(0.5) = (1-t') = (1-0.5) = 0.5$$ is the normalized saved time for both parties, which corresponds with 5 months.
 
@@ -113,14 +113,14 @@ In the future I will explore different $$SRF(t')$$ functions, but for now I will
 
 * The development will follow an iterative process where the customer **must** be an active part, providing feedback about value provided.
 
-* All split conditions for the budget left are known and agreed upon by both parties. No surprises. No bargaining post-kickoff.
+* All split conditions for the remaining budget are known and agreed upon by both parties. No surprises. No bargaining post-kickoff.
 
-* If the feedback is bad during the early stages of the development, customer can retire saving most of the budget left, but not all of it. The team will be compensated for the work done and the blocked time (opportunity cost).
+* If the feedback is bad during the early stages of the development, customer can retire saving most of the remaining budget, but not all of it. The team will be compensated for the work done and the blocked time (opportunity cost).
     * The earlier the customer retires, the more money they save but the less value they get.
 
 * If the feedback is good during the development, the development will reach some point where the customer will decide that there is no more value to be added before reaching the deadline and the project can be considered **done**.
 
-    * In this case, the customer can save part of the budget left, but not all of it. The team will be compensated for **early delivery** of the **highest possible value**.
+    * In this case, the customer can save part of the remaining budget, but not all of it. The team will be compensated for **early delivery** of the **highest possible value**.
     * The customer gets top-value in less time for less money.
     * The team gets higher compensation/effort ratio, plus more time to work on other projects (or to rest).
 
@@ -156,7 +156,7 @@ As there is no trust, any attempt to deliver value early will be translated into
 
 * $$SRF(t') = 0$$, provider predates the budget excess
 * $$S_\$(t') = 0$$, no savings in the budget
-* $$C_\$(t') = B_L(t') = B(1-t')$$, but this will eventually be zero as $$t'=1$$ because of artificially extended delivery time.
+* $$C_\$(t') = B_R(t') = B(1-t')$$, but this will eventually be zero as $$t'=1$$ because of artificially extended delivery time.
 * $$T_S(t') = 0$$, no savings in time
 
 ### Customer predatory model
@@ -165,10 +165,10 @@ In this model the provider is not compensated for the blocked time if the custom
 
 * $$SRF(t') = 1$$, customer predates the budget excess
 * $$C_\$(t') = 0$$, no compensation for the opportunity cost
-* $$S_\$(t') = B_L(t') = B(1-t')$$, all savings in the budget
+* $$S_\$(t') = B_R(t') = B(1-t')$$, all savings in the budget
 * $$T_S(t') = 0$$, no savings in time
 
-In this scenario the customer has all power. They can retire at any time and save all the budget left. The provider will not be compensated for the blocked time, but they will be compensated for the work done.
+In this scenario the customer has all power. They can retire at any time and save all the remaining budget. The provider will not be compensated for the blocked time, but they will be compensated for the work done.
 
 Anyhow, under this constraints there is no benefit on delivering early, so the provider will keep value hostage to ensure the next payment. This is a waste of time and money for everybody. Again.
 
