@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: English
+tags: WIP
 categories: agile business lean
 has_math: True
 ---
@@ -66,77 +66,85 @@ This proposal is an equilibrium point between the customer's and the provider's 
 
 > The rule to calculate the compensation split for the available budget can be linear, quadratic, a LUT, ... whatever that fits the business model. For the examples, I will use a linear compensation for simplicity.
 
-## Savings/Compensation function $$\sigma(t')$$
+## Savings Ratio Function $$SRF(t')$$
+
+Given that:
 
 * Project has a budget $$B$$
 * Project has a duration $$D_B$$
 * Elapsed time at a given moment is $$t$$.
-* Normalized time is $$t'=t/D_B $$with $$t'\in[0,1]$$
+* Normalized time is $$t'=t/D_B$$ with $$t'\in[0,1]$$
     * $$t'=0$$ means that the project has just started
     * $$t'=1$$ means that the project has reached the deadline
-* Budget left at a given moment: $$B_{L_t}=B-(B/D)·t=B(1-t/D) = B(1-t')$$
-* Budget left is split into two parts:
-    * $$S_\$  = B_{L_t}·\sigma(t')$$ are the economic savings for the customer
-    * $$C_\$ = B_{L_t}·(1-\sigma(t'))$$ is the economic compensation for the blocked time (opportunity cost)
-    * Where $$\sigma(t')$$ is the split factor. $$\sigma(t')\in[0,1]$$
-    * $$B_{L_{t'}} = S_\$ + C_\$ $$
-* About the deadline:
-    * $$S_{t'} = (1-t')$$ is the normalized saved time for both parties
-        > *One extension of the model could imply translating this saved time into money for the provider, given some historical data about the team's productivity. This is not included in this proposal.*
-* Provider income: $$P_\$=(B*t'+C_\$)$$
+* Budget left at a given moment is $$B_L(t')=B-(B/D)·t=B(1-t/D) = B(1-t')$$
+
+Then, we can split the budget left in two parts:
+
+* $$S_\$(t')  = B_L(t')·SRF(t')$$ are the economic savings for the customer
+* $$C_\$(t') = B_L(t')·(1-SRF(t'))$$ is the economic compensation for the blocked time (opportunity cost)
+* So, the budget left is the sum of both savings plus compensation: $$B_L(t') = S_\$ + C_\$ $$
+* Where $$SRF(t')\in[0,1]$$ is the **split factor function**.
+    * It represents what percentage of the budget left is saved by the customer if they retire at a given moment $$t'$$.
+
+
+Also, other derived results:
+* $$T_S(t') = (1-t')$$ is the normalized saved time for both parties
+    > *One extension of the model could imply translating this saved time into money for the provider, given some historical data about the team's productivity. This is not included in this proposal.*
+
+* Provider income: $$P_\$(t')=(B*t'+C_\$(t'))=...=B(1-SRF(t')·T_S(t')) < B$$
+    * This amount is never bigger than the budget.
+    * If $$SRF(t') = 0$$, the customer has no savings and the provider gets the full budget. See the example below about the Predatory Provider.
+    * If $$T_S(t') = 0$$, it means that all the available time has been used and the customer has no savings.
+    
+
 
 ## Constant model
 
-In this model we assume that $$\sigma(t') = \sigma_0$$, where $$\sigma_0$$ is a constant. This means that the customer will save the same percentage of the budget left at any point in time and this amount will be also the compensation for the blocked time.
+In this model we assume that $$SRF(t') = SRF_0$$, where $$SRF_0$$ is a constant. This means that the customer will save the same percentage of the budget left at any point in time and this amount will be also the compensation for the blocked time.
 
 For example, imagine we settle a project with these parameters:
 
 * Budget: $$B=400000$$
 * Duration: $$D_B=10$$months
-* Let's give some room to the customer: $$\sigma(t') = \sigma_0 = 0.8$$
+* Let's give some room to the customer: $$SRF(t') = SRF_0 = 0.8$$
 
 Customer wants out at $$t'=0.5$$ (half of the project duration). Then:
 
-* $$B_{L_{t'}} = B·(1-t') = B·(1-0.5) = B·(0.5) = 200000$$ has not been spent yet.
-* $$S_\$ = B_{L_{t'}}·\sigma = 200000·0.8 = 160000$$ are the economic savings for the customer
-* $$C_\$ = B_{L_{t'}}·(1-\sigma) = 200000·0.2 = 40000$$ is the economic compensation for the blocked time (opportunity cost)
-* $$P_\$ = (B·t'+C_\$) = (400000·0.5+40000) = 240000$$ is the provider income
-* $$S_{t'} = (1-t') = (1-0.5) = 0.5$$ is the normalized saved time for both parties, which corresponds with 5 months.
+* $$B_L(0.5) = B·(1-0.5) = B·(0.5) = 200000$$ has not been spent yet.
+* $$S_\$(0.5) = B_L(0.5)·SRF = 200000·0.8 = 160000$$ are the economic savings for the customer
+* $$C_\$(0.5) = B_L(0.5)·(1-SRF) = 200000·0.2 = 40000$$ is the economic compensation for the blocked time (opportunity cost)
+* $$P_\$(0.5) = (B·t'+C_\$(0.5)) = (400000·0.5+40000) = 240000$$ is the provider income
+* $$T_S(0.5) = (1-t') = (1-0.5) = 0.5$$ is the normalized saved time for both parties, which corresponds with 5 months.
 
-> I find this model too simple and not very useful, as it always punishes one side, depending on context. It is just a starting point to explore the possibilities.
+### Is it useful?
 
-## Linear model
+I find this model maybe too simple but it is a first approximation. It is easy to understand and it is easy to calculate.
 
-In this model we assume that $$\sigma(t') = \alpha t' + \beta$$, and we define one or two optional deadzones for the kick-off and the end of the project.
+In the future I will explore different $$SRF(t')$$ functions, but for now I will use this constant model to illustrate the proposal.
 
-For example, we could define a project with these parameters:
+> Maybe some SRF that converts the provider income vs t' into a displaced sigmoid function could be interesting. Something to protect the customer from poor value deliveries in the first stages and to protect the provider from the customer's whims once the project is mature.
 
-* $$\beta = ...$$**TBD**
+## Some questions
 
-## Quadratic model
+### What happens if "project is about to reach deadline and customer is not satisfied with the value delivered"?
 
-In this model we assume that $$\sigma(t') = \alpha t'^2 + \beta t' + \gamma$$, and we define one or two optional deadzones for the kick-off and the end of the project.
-
-> **TBD**. Not sure if anything interesting can be done with this model in a practical scenario.
-
-## Why there is no example for "project is about to reach deadline and customer is not satisfied with the value delivered"?
-
-Because that scenario means that the agile process is not working in this project. Not meeting a deadline is something that can be predicted and avoided given the constraints I provided above.
+That scenario means that the agile process is not working in this project. Not meeting a deadline is something that can be predicted and avoided given the constraints I provided above.
 
 I am not saying that this is not a real problem, I just say that it does not apply to this proposal in its current form.
 
-## Why not predate the budget with a draconian contract?
+### Why not predate the budget with a draconian contract?
 
 Because our work is to deliver value, not to pay lawyers to write smart contracts. If you prefer to predate the budget in case of early retirement, go ahead. But then you are not in the software business, you are in the legal business.
+
+This is a suboptimal solution as delivering value way before the deadline has more direct and potential income.
 
 ## How the hell are you going to explain this to the customer?
 
 First condition: the customer must trust the team. If the customer does not trust the team, then this proposal is not going to work.
 
-Also, define a $$\sigma(t')$$ that is easy to explain. Maybe a constant is good enough. Maybe some LUT definition is also a good thing.
+Also, define a $$SRF(t')$$ that is easy to explain. Maybe a constant is good enough. This is a business decision.
 
 ## Degenerate cases
-
 
 ### Provider predatory model
 
@@ -146,19 +154,19 @@ In this case, as the customer has to spend the whole budget in any case, the pro
 
 As there is no trust, any attempt to deliver value early will be translated into artificial work that will not add value to the customer. This is a waste of time and money for everybody.
 
-* $$\sigma(t') = 0$$, provider predates the budget excess
-* $$S_\$ = 0$$, no savings in the budget
-* $$C_\$ = B_{L_t} = B(1-t')$$, but this will eventually be $$C_\$ = 0 $$as $$t'=1 $$because of artificially extended delivery time.
-* $$S_{t'} = 0$$, no savings in time
+* $$SRF(t') = 0$$, provider predates the budget excess
+* $$S_\$(t') = 0$$, no savings in the budget
+* $$C_\$(t') = B_L(t') = B(1-t')$$, but this will eventually be zero as $$t'=1$$ because of artificially extended delivery time.
+* $$T_S(t') = 0$$, no savings in time
 
 ### Consumer predatory model
 
 In this model the provider is not compensated for the blocked time if the customer decides to retire early. 
 
-* $$\sigma(t') = 1$$, consumer predates the budget excess
-* $$C_\$ = 0$$, no compensation for the opportunity cost
-* $$S_\$ = B_{L_t} = B(1-t')$$, all savings in the budget
-* $$S_{t'} = 0$$, no savings in time
+* $$SRF(t') = 1$$, consumer predates the budget excess
+* $$C_\$(t') = 0$$, no compensation for the opportunity cost
+* $$S_\$(t') = B_L(t') = B(1-t')$$, all savings in the budget
+* $$T_S(t') = 0$$, no savings in time
 
 In this scenario the customer has all power. They can retire at any time and save all the budget left. The provider will not be compensated for the blocked time, but they will be compensated for the work done.
 
