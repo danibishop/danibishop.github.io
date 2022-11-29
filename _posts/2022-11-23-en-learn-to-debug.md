@@ -23,11 +23,10 @@ Then you will be a much happier person once you learn **how to use a debugger**.
 
 * Debuggers are non-intrusive: they don't modify your code in any way. They just allow you to inspect the state of your program while it's running.
 * You can debug your tests. If some test suddendly fails, you can debug it to see what's going on (some people could argue that this smells like a bad test because it cannot be "easily understood", but that's a different topic).
-* TBD
 
 ## But debugging is hard!
 
-Debugging is not hard; **using ugly or complicated tools is hard**. There is a lot of discussion about "how unfriendly is `gdb`", but aside from these debates in the `C/C++` world, debugging most of the code out there is quite easy and straightforward nowadays most of the time.
+Debugging is not hard; **using ugly or complicated tools is hard**. There is a lot of discussion about "how unfriendly `gdb` is", but aside from these debates in the `C/C++` world, debugging most of the code out there is quite easy and straightforward nowadays most of the time.
 
 Debugging Python, Javascript, Typescript, Java, C#, etc. (which represent around the 70% up to 90% of the code out there depending on the source you check) is nowadays fully supported by the IDEs and editors you use. You don't need to learn a new tool, you just need to learn how to use the one you already have.
 
@@ -42,3 +41,4 @@ Here you have John Carmack talking about IDEs and tools.
 ## TODO
 
 * [ ] Add example
+* [ ] Add references to pros and cons
