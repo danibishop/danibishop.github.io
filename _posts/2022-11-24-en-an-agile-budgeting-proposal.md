@@ -6,14 +6,14 @@ has_math: True
 published: False
 ---
 
-## An agile budgeting proposal
+# An agile budgeting proposal
 
 > **THIS IS A WIP**
 
 > tl;dr: Every project I have seen in outsourcing companies has a budget. But the budget is not agile. It's a static document that is not updated during the project. This is a draft of one of the potential solutions to this problem.
 
 
-### Two problems
+## How can we translate agility into budgeting?
 
 Let's say you have a nice self-managed team that adapts and delivers value at a fast pace to a costumer of a given service-provider company. You have achieved the Agile nirvana. Haven't you?
 
@@ -44,9 +44,7 @@ I will explore here a potential solution to these problems. But first we need to
 
 ## Hypothesis
 
-This proposal is an equilibrium point between the customer's and the provider's interests. None of them will regret this agreement once the project starts in any reasonable scenario.
-
-
+This proposal brings an equilibrium point between the customer's and the provider's interests. None of them will regret this agreement once the project starts in any reasonable scenario.
 
 
 ## Savings Ratio Function $$SRF(t')$$
