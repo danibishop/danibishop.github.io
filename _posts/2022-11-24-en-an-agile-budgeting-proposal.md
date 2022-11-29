@@ -3,6 +3,7 @@ layout: post
 tags: WIP
 categories: agile business lean
 has_math: True
+published: False
 ---
 
 ## An agile budgeting proposal
