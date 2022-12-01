@@ -4,6 +4,10 @@
 
 Docs [here](https://github.com/envygeeks/jekyll-docker/blob/master/README.md)
 
+## Analytics
+
+Goat Counter Dashboard [here](https://danibishop.goatcounter.com)
+
 ### For development (it does not auto-refresh in Windows :( )
 
 ```bash
