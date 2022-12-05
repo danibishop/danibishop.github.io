@@ -20,21 +20,13 @@ Los frameworks son herramientas que te permiten, supuestamente, construir softwa
 
 De nuevo, el saber de un framework seguramente te abra puertas (a la vez que te cierra otras, por cierto), pero ganar dinero **de verdad** va de otra cosa.
 
-## Españita
-
-Muchas ofertas que existen para proyectos de desarrollo de software en el contexto nacional suelen ir ligadas a un lenguaje o framework concreto. Cuando llevas suficiente tiempo en la industria, sabes que las ofertas se redactan generalmente tirando de algún conocimiento vago sobre el proyecto y, si tienes suerte, con algunos datos concretos.
-
-Además, hay que distinguir entre a) proyectos de consultoría y b) proyectos de producto propio (sé que me dejo muchos más casos, pero sólo quiero establecer dos formas muy generalizadas de trabajar). Históricamente los proyectos de consultoría (a.k.a. cárnicas) han sido peor pagados y con peores condiciones, pero eran más... laxos, a la hora de contratar. En los últimos años, las empresas de producto propio han ido creciendo y, con ellas, la competencia por los mejores perfiles.
-
 ## ¿Qué es lo que te va a permitir ganar dinero **de verdad**?
 
-Pues para quién lo vive ya, es evidente. Y para las madres de los 80/90, también. El mundo está virando en otras direcciones, pero a día de hoy lo que marca la diferencia es **HABLAR INGLÉS SIN MIEDO**.
+Pues para quién lo vive ya, es evidente. Y para las madres de los 80/90, también. El mundo está virando en otras direcciones, pero a día de hoy lo que marca la diferencia es **SER CAPAZ DE MANTENER UNA COMUNICACIÓN FLUIDA EN INGLÉS SIN MIEDO; TANTO HABLANDO COMO POR ESCRITO**.
 
-Digo "hablar" porque lo importante es ser capaz de entenderse y comunicar en inglés de manera efectiva, tanto hablando, como consumiendo contenido como redactando y leyendo.
+A pesar de vivir rodeados de cultura anglosajona, con capacidad de consumir miles de piezas de entretenimiento en inglés, viviendo en un mundo tecnológico que se mueve en inglés, el porcentaje de gente que se siente cómoda viviendo en inglés a diario es bastante bajo.
 
-Estoy bastante seguro de que todo el mundo en la industria a estas alturas ha tenido, al menos, unos cuantos cursos de inglés; ya sea en el colegio, instituto, formación profesional, universidad... Incluso hay mucha gente que se examina para certificarse.
-
-Aún así, a pesar de vivir rodeados de cultura anglosajona, con capacidad de consumir miles de piezas de entretenimiento en inglés, viviendo en un mundo tecnológico que se mueve en inglés, el porcentaje de gente que se siente cómoda viviendo en inglés a diario es bastante bajo.
+> Creo recordar algo como que del 30% de gente que habla inglés, sólo el 20% considera que lo hace con nivel alto. Eso es un 6% en la población general. Teniendo en cuenta que el nivel de inglés correla bastante bien con el nivel de estudios y que en nuestro sector abunda el nivel alto de estudios, igual podemos subir el porcentaje a un 10% de la población en el sector para hacernos una idea.
 
 ## A qué me refiero con "de verdad"
 
@@ -48,7 +40,22 @@ Puede parecer que esas cantidades están muy bien... y lo están dado el context
 
 Hablamos de salarios de 100k, 150k, 200k, 300k, 400k, 500k... y más. Y no hablo de CEOs, hablo de gente que hace código.
 
+Según datos de `levels.fyi`:
+
+| Experiencia | Salario mediano | Top 10% | Región |
+| :--- | ---: | ---: | :--- |
+| Entry | 29k€ | 57k€+ | España |
+| Entry | 61k€ | 81k€+ | Alemania |
+| Entry | **165k€** | **213k€+** | SF Bay Area (USA) |
+| Senior | 62k€ | 108k€+ | España |
+| Senior | 84k€ | 110k€+ | Alemania |
+| Senior | **274k$** | **450k$+** | SF Bay Area (USA) |
+
+
+
 ## En realidad no basta con el idioma
+
+El idioma es barrera de entrada pero también hay **que saber hacer las cosas**. Cuanto más subes de salario, más competitiva está la cosa en general (aunque hay empresas donde esta presión es menor). Te vas a encontrar con gente top de la industria, con mucha experiencia y, posiblemente, nativos. También hay gente paquete, pero mejor pensar que vas a una liga superior de entrada.
 
 Hay también un componente muy importante de seguridad en ti. Muchas veces nos cuesta aprovechar una oportunidad para cambiar de puesto de trabajo, incluso en nuestro propio idioma, porque es muy difícil romper la inercia de estar en un sitio que ya conoces y que te da de comer aunque tenga sus problemas.
 
