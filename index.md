@@ -24,3 +24,9 @@ title: Tech Lead - Team builder - Enabler
 ## Contact me
 
 If you need **mentorship** for your personal development or **team building consultancy services** for your team, please contact me using the links below or this [summarized CV](https://trello.com/b/14rDUIh6/curriculum-dani-ramirez)
+
+## TODO
+
+* [ ] Header photo
+* [ ] Customers ribbon
+* [ ] Languages ribbon

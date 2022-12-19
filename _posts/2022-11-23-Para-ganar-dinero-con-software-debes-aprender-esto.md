@@ -30,7 +30,6 @@ A pesar de vivir rodeados de cultura anglosajona, con capacidad de consumir mile
 
 ## A qué me refiero con "de verdad"
 
-Cuando hablo de ganar dinero **de verdad** hablo de ganar cantidades que, en determinados casos, te pueden permitir jubilarte con bastante antelación.
 
 A día de hoy, todavía encuentro ofertas para "juniors" pagando en torno a 25K€/año. Teniendo en cuenta lo que una empresa suele ganar con el trabajo de cualquier trabajador, sobre todo en el sector tecnológico, es una cantidad ridícula.
 
