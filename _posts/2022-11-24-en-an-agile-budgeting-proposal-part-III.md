@@ -10,7 +10,7 @@ published: True
 
 > DISCLAIMER: This is a WIP
 
-> This is the third and last part of a series of posts about agile budgeting. The first part with the basics can be found [here](agile/business/lean/2022/11/24/en-an-agile-budgeting-proposal-part-I) and the second (with the mathematical theory) [here](agile/business/lean/2022/11/24/en-an-agile-budgeting-proposal-part-II).
+> This is the third and last part of a series of posts about agile budgeting. The first part with the basics can be found [here](en-an-agile-budgeting-proposal-part-I) and the second (with the mathematical theory) [here](en-an-agile-budgeting-proposal-part-II).
 
 ## Some questions
 

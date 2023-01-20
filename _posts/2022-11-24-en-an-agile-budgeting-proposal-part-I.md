@@ -56,4 +56,4 @@ This function is defined at company, department or project level. It's a functio
 This function must be easy to understand and easy to explain to the customer. It must be easy to explain to the team as well.
 
 --- 
-In the [next article](agile/business/lean/2022/11/24/en-an-agile-budgeting-proposal-part-II) I explain the basic theory behind the model and I give a concrete example, using a constant function.
+In the [next article](en-an-agile-budgeting-proposal-part-II) I explain the basic theory behind the model and I give a concrete example, using a constant function.
