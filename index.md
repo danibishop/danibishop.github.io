@@ -7,6 +7,8 @@ title: Tech Lead - Team builder - Enabler
 
 > tl;dr: Almost 20 years of software development experience focused on team building and quality assurance
 
+![Dani Ramirez](/assets/img/header.jpg)
+
 ## Building a team is not easy
 
 * Developing software nowadays is not just about technology, it's about people and processes.
@@ -35,6 +37,6 @@ If you need **mentorship** for your personal development or **team building cons
 
 ## TODO
 
-* [ ] Header photo
-* [ ] Customers ribbon
+* [x] Header photo
+* [x] Customers ribbon
 * [ ] Languages ribbon
