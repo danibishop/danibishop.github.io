@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tech Lead - Team builder - Enabler
+title: Dani Ramírez - Software Consultant
 ---
 
 # I help software teams to succeed
