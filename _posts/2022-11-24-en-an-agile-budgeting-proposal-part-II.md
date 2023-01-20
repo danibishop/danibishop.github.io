@@ -10,7 +10,7 @@ published: True
 
 > DISCLAIMER: This is a WIP
 
-> This is the second part of a series of posts about agile budgeting. The first part can be found [here](/en/an-agile-budgeting-proposal-part-I).
+> This is the second part of a series of posts about agile budgeting. The first part can be found [here](agile/business/lean/2022/11/24/en-an-agile-budgeting-proposal-part-I).
 
 ## Agile Budget Split Function $$ABSF(t')$$
 
@@ -95,4 +95,4 @@ I find this model too simple but it is an applied example about how to apply the
 
 ---
 
-In the [next article](/en/an-agile-budgeting-proposal-part-III) I show some Q&A and degenerated cases to get some perspective.
+In the [next article](agile/business/lean/2022/11/24/en-an-agile-budgeting-proposal-part-III) I show some Q&A and degenerated cases to get some perspective.
