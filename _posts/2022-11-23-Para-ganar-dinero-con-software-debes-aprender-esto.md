@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: basics
-published: False
+published: true
 ---
 
 # Una cosa que debes dominar para ganar dinero **de verdad** haciendo software
@@ -24,12 +24,17 @@ De nuevo, el saber de un framework seguramente te abra puertas (a la vez que te 
 
 Pues para quién lo vive ya, es evidente. Y para las madres de los 80/90, también. El mundo está virando en otras direcciones, pero a día de hoy lo que marca la diferencia es **SER CAPAZ DE MANTENER UNA COMUNICACIÓN FLUIDA EN INGLÉS SIN MIEDO; TANTO HABLANDO COMO POR ESCRITO**.
 
+Hala. Ya soy tu abuela.
+
+## La diferenciación
+
 A pesar de vivir rodeados de cultura anglosajona, con capacidad de consumir miles de piezas de entretenimiento en inglés, viviendo en un mundo tecnológico que se mueve en inglés, el porcentaje de gente que se siente cómoda viviendo en inglés a diario es bastante bajo.
 
 > Creo recordar algo como que del 30% de gente que habla inglés, sólo el 20% considera que lo hace con nivel alto. Eso es un 6% en la población general. Teniendo en cuenta que el nivel de inglés correla bastante bien con el nivel de estudios y que en nuestro sector abunda el nivel alto de estudios, igual podemos subir el porcentaje a un 10% de la población en el sector para hacernos una idea.
 
-## A qué me refiero con "de verdad"
+Resulta que tras décadas de tener el inglés por todos lados, el dominarlo a nivel medio es algo que te hace destacar del resto.
 
+## A qué me refiero con "de verdad"
 
 A día de hoy, todavía encuentro ofertas para "juniors" pagando en torno a 25K€/año. Teniendo en cuenta lo que una empresa suele ganar con el trabajo de cualquier trabajador, sobre todo en el sector tecnológico, es una cantidad ridícula.
 
@@ -68,12 +73,14 @@ Hay quién dice que deberíamos aprender chino mandarín. Hay quién dice que co
 
 Yo lo que sé es que un cambio cultural tan grande como desplazar la lengua hegemónica en la industria no sucede en 1, 2 o 10 años. Bueno, en 10 a lo mejor. Pero en el peor caso has usado esos 10 años a su máximo potencial y has podido ganar dinero **de verdad** a la vez que te has preparado para el futuro.
 
-## ¿Cómo aprendo inglés?
+## Cómo aprendí yo
 
-A mí me funcionó una mezcla entre ir a EGB/BUP/COU y tener mucho ocio en inglés sin alternativa en español. Especialmente videojuegos y música.
+Como no soy nadie para decirte como debes aprender con tus circunstancias, me limito a comentar como me fue a mí.
+
+A mí me funcionó una mezcla entre ir a EGB/BUP/COU y tener mucho ocio en inglés sin alternativa en español. Especialmente videojuegos, música, libros, comics... El querer disfrutar de estas obras me creó un interés desmedido por aprender el idioma.
 
 Esto era todo consumo pásivo en su mayor parte; no empecé a hablar a diario hasta que me mudé a Alemania (donde, además, aprendí alemán).
 
 Hay un componente muy relevante social en todo esto. Si eres de perfil tímido o introvertido, seguramente debas poner más de tu parte para encontrar tu ambiente adecuado donde practicar inglés y este tipo de perfiles es bastante común en nuestra industria.
 
-Hoy en día hay apps y servicios. Mi consejo es que pruebes cualquier cosa que parezca que pueda funcionar.
+Yo, entre que soy bastante introvertido y que acabé harto de ir a clases en mis años de universidad, siempre he tenido una vertiente muy autodidacta. Si te funciona, pues es una opción. O tira de apps, podcasts, libros, cursos reglados, etc.
