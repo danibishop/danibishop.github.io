@@ -60,6 +60,12 @@ In this scenario the customer has all power. They can retire at any time and sav
 
 Anyhow, under this constraints there is no benefit on delivering early, so the provider will keep value hostage to ensure the next payment. This is a waste of time and money for everybody. Again.
 
+## A really good talk about this
+
+Here you have a talk from AgileIndia 2015 by [Evan Leybourn](https://theagiledirector.com/about/) about managing Agile projects. It is worth watching. A couple of times.
+
+{% include youtubePlayer.html id="Btz-D84UXw4" %}
+
 ## TODO (for the series)
 * [ ] Add all examples
 * [ ] Add references
