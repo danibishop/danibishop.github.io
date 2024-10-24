@@ -5,7 +5,7 @@ title: Dani Ramírez - Software Consultant
 
 # I help software teams to succeed
 
-> tl;dr: Almost 20 years of software development experience focused on team building and quality assurance
+> tl;dr: Almost 20 years of software development experience focused on team building, dev experience and simplicity
 
 ![Dani Ramirez](/assets/img/header.jpg)
 
@@ -26,6 +26,7 @@ title: Dani Ramírez - Software Consultant
 
 ## On the tech side
 
+* Do you need to fix AI bugs?
 * Do you need to develop an MVP fast?
 * Do you need to improve your software quality and reduce bugs?
 * Do you need to deliver faster and more reliably?
@@ -33,7 +34,7 @@ title: Dani Ramírez - Software Consultant
 
 ## ...contact me
 
-If you need **mentorship** for your personal development or **team building consultancy services** for your team, please contact me using the links below or this [summarized CV](https://trello.com/b/14rDUIh6/curriculum-dani-ramirez)
+If you need a) **mentorship** for your personal development, b) **team building consultancy services** for your team and/or c) an experienced software developer, please contact me using the links below or this [summarized CV](https://trello.com/b/14rDUIh6/curriculum-dani-ramirez)
 
 ## TODO
 

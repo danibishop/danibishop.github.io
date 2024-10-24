@@ -1,8 +1,8 @@
 ---
 layout: post
 tags: mistakes
-categories: basics
-published: False
+categories: basics, agile, dev-experience
+published: True
 ---
 
 # What Luke Skywalker thinks about your project
@@ -19,9 +19,15 @@ Scrum is not Agile. Agile is [Agile](https://agilemanifesto.org/). Scrum is a wr
 
 ## Second mistake : "We estimate the most important stories to know how much work can be done during the sprint"
 
+Importance comes from value. Priority should come from cross-matching value and effort. Max value, min effort: that's the top priority. As nobody will tell you how many monetary units you will receive from a completed story, estimating the effort is just a waste of time.
+
+Discuss about the most relevant topics regarding your product/service. You need some rough estimation **as a team** to bet on what should be done first, but do not let the estimation be the main driver of your development.
+
 ## Third mistake: "Each developer takes a story"
 
-ELLABORATE: pair/mob programming
+Then you get Bob, who knows about the frontend. Then, Alice, who only knows about the API. And Ron, who nobody knows what he knows about, but he is the only one who knows how to deploy the application for some reason.
+
+Tackle stories as a team from definition to production.
 
 ## Fourth mistake: Doing Gitflow
 
@@ -29,16 +35,6 @@ This is not literal from the explanation but it is "common sense" nowadays in ma
 
 Atlassian itself has stated that **GITFLOW IS OUTDATED**. As they state [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow): *"Gitflow is a legacy Git workflow"*
 
-## Fifth mistake: pull requests
+Stop doing Gitflow and start doing trunk-based development with feature flags or some similar mechanism. Happiness will come to your team.
 
-## Sixth mistake: Using a development branch
-
-## Seventh mistake: Merging into master
-
-ELLABORATE: mixing deploy and release
-
-## Final thoughts
-
-> *Search your feelings you know it to be true* - Darth Vader
-
-- ELLABORATE -> There is no reference to delivered value in most of the explanations about the development process.
+> This post is part of a series. [Read the next part here](/2024/10/24/en/all-you-said-is-wrong-part-II.html)
