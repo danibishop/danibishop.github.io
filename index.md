@@ -5,7 +5,7 @@ title: Dani Ramírez - Software Consultant
 
 # I help software teams to succeed
 
-> tl;dr: Almost 20 years of software development experience focused on team building, dev experience and simplicity
+> tl;dr: Almost 20 years of software development experience focused on team work, dev experience and simplicity. Encouraging proactivity and self-management.
 
 ![Dani Ramirez](/assets/img/header.jpg)
 
