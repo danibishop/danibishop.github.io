@@ -36,6 +36,14 @@ title: Dani Ramírez
 
 If you need a) **mentorship** for your personal development, b) **team building consultancy services** for your team and/or c) an experienced software developer, please contact me using the links below or this [summarized CV](https://trello.com/b/14rDUIh6/curriculum-dani-ramirez)
 
+
+## Also, you can find me at Mamarrachine.org!
+
+We are building something cool at [Mamarrachine.org](https://mamarrachine.org): a sandbox space for technology, arts and culture. We are a group of friends that love to share knowledge and experiences. We are not a company, we are not a startup, we are not a non-profit. We are just a bunch of people that love to share and learn. Join us!
+
+![Mamarrachine](/assets/img/MamarrachineLogo.png)
+
+
 ## TODO
 
 * [x] Header photo
